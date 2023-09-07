@@ -1,0 +1,104 @@
+<!doctype HTML>
+<html lang="uk">
+
+<head>
+	<meta charset="utf-8">
+	<title>Форма</title>
+</head>
+
+
+<body>
+<h1>Проєктування та  розробка веб-застосунків</h1>
+<h2>Лабораторна робота №1</h2>
+<h2>Виконала студентка групи КН-32</h2>
+<h2>Гнатюк Анна Михайлівна</h2>
+<h2>Варіант №6</h2>
+
+	<a href="index.html">На головну</a>
+
+	<h3>Завдання</h3>
+	<p>Необхідно розробити форму для введення товару до інтернет-магазину.</p>
+	<p>Необхідно заповнити  наступні данні:</p>
+	<ul>
+		<li>
+			дані про товар, включають назву товару, тип товару(вибирається зі списку), опис, поточну ціну, ціну зі знижкою;
+
+		</li>
+		<li>
+			дані про виробника, включають назву,  електрону пошту, посилання на веб-сайт, коментарі.
+		</li>
+	</ul>
+	
+	<form action="" method="POST">
+		<fieldset>
+			<legend> Товар </legend>
+
+			<label> Назва
+				<input id="product_name" type="text">
+			</label>
+
+			<label> Тип
+				<select>
+					<option>Краса та здоров'я</option>
+					<option>Дім і сад</option>
+					<option>Одяг та взуття</option>
+					<option>Техніка та електроніка</option>
+					<option>Товари для дітей</option>
+					<option>Авто-, мото</option>
+					<option>Подарунки, хобі, книги</option>
+					<option>Аксесуари та прикраси</option>
+					<option>Матеріали для ремонту</option>
+					<option>Спорт і відпочинок</option>
+					<option>Медикаменти та медичні товари</option>
+					<option>Домашні тварини та зоотовари</option>
+				</select>
+			</label>
+
+			<label> Опис
+				<input id="product_description" type="text">
+			</label>
+
+			<label> Ціна
+				<input id="product_price" type="number" min="0">
+			</label>
+
+			<label> Ціна зі знижкою
+				<input id="sale_product_price" type="number" min="0">
+			</label>
+
+		</fieldset>
+
+
+		<fieldset>
+			<legend> Виробник </legend>
+
+			<label> Назва
+				<input id="developer_name" type="text">
+			</label>
+
+			<label> Електронна пошта
+				<input id="email" type="text">
+			</label>
+
+			<label> Посилання на веб-сайт
+				<input id="site" type="text">
+			</label>
+
+			<label> Коментарі
+				<textarea rows="5" cols="50"></textarea>
+			</label>
+
+		</fieldset>
+
+		<button type="submit">Відправити</button>
+
+	</form>
+
+</body>
+
+
+
+
+
+</html>
+
